@@ -32,7 +32,7 @@ public class GameofLife extends World
     {
         for (int i = 1; i<29; i++)
         for (int j = 1; j < 19; j++)
-        addObject(new Cell(Greenfoot.getRandomNumber(10)==0), i, j);
+        addObject(new Cell(Greenfoot.getRandomNumber(10)<2), i, j);
     }
     private void prepare()
     {

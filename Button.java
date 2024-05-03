@@ -10,7 +10,7 @@ public class Button extends Label
 {
     public Button(String str)
     {
-        super(32);
+        super(str, 32);
     }
     /**
      * Act - do whatever the button wants to do. This method is called whenever
@@ -18,6 +18,7 @@ public class Button extends Label
      */
     public void act()
     {
-        // Add your action code here.
+        if (Greenfoot.mouseClicked(this))
+        ((GameofLife)getWorld()).pause();
     }
 }

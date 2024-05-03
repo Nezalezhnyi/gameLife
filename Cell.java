@@ -17,7 +17,6 @@ public class Cell extends Actor
     {
         this(false);
     }
-    
     public Cell(boolean a)
     {
         live = a;
@@ -38,7 +37,10 @@ public class Cell extends Actor
     public void act()
     {
         if (Greenfoot.mouseClicked(this))
+        {
             live = !live;
+            nextLive = live;   
+        }
         if (!((GameofLife)getWorld()).paused())
         {
             if (update)
@@ -46,11 +48,6 @@ public class Cell extends Actor
             else calculate();
             update = !update;
         }
-            
-        if (update)
-            update();
-        else calculate();
-        update = !update;
         if (live)
             setImage(liveImg);
         else setImage(deadImg);
