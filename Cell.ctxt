@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Cell
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Cell\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Cell()
+comment2.params=a
+comment2.target=Cell(boolean)
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ Cell\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment4.params=
+comment4.target=void\ update()
+comment5.params=
+comment5.target=void\ calculate()
+numComments=6
