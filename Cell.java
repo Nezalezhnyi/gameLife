@@ -30,6 +30,11 @@ public class Cell extends Actor
         
         setImage(deadImg);
     }
+    public void setLive(boolean a)
+    {
+        live = a;
+        nextLive = live;
+    }
     /**
      * Act - do whatever the Cell wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -38,8 +43,7 @@ public class Cell extends Actor
     {
         if (Greenfoot.mouseClicked(this))
         {
-            live = !live;
-            nextLive = live;   
+            ((GameofLife)getWorld()).radar(getX(), getY());
         }
         if (!((GameofLife)getWorld()).paused())
         {
